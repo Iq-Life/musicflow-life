@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './StationsList.module.scss'
+import Image from 'next/image'
+import stationLogo from '/public/logo.png'
 
 const stationsMusic = [
   {
@@ -16,6 +18,7 @@ const StationsList = () => {
   return (
     <div className={styles.stationsList}>
       <ul>
+        <Image className={styles.icon} src={stationLogo} alt='logo' height={45} />
         <h3>Stations</h3>
         {stationsMusic.map((station) => (
           <li key={station.id}>{station.title}</li>

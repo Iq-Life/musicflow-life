@@ -1,6 +1,33 @@
 .navbar {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   background-color: rgba(255,255,255, 0.1);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footerNavbar {
+  display: flex;
+  justify-content: space-between;
+  .icon {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: 'for coffee';
+      display: inline;
+      opacity: 0;
+    }
+    &:hover:before{
+      opacity: 1;
+    }
+  }
+  
+  .logout {
+    text-align: center;
+  }
 }

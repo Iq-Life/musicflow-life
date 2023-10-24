@@ -1,0 +1,18 @@
+.contact {
+  h1 {
+    margin: 40px;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+    .containerIcon {
+      
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px;
+    }
+  }
+}

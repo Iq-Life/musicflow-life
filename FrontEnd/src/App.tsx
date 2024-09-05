@@ -1,32 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  console.log()
+  console.log('asdas')
+  const arr = () => {
+    console.log('hgello')
+  }
+  arr()
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <header>
+        <nav>
+          <a href="*">1</a>
+          <a href="*">2</a>
+          <a href="*">3</a>
+
+          <a href="*">4</a>
+          <a href="*">5</a>
+        </nav>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique,
+          quas quia odit, quo possimus porro totam deserunt repudiandae nihil
+          dolores aut nobis atque soluta ex ducimus. Ex, iure corporis.
+        </h1>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis unde
+        quibusdam quo illo excepturi illum sint tempore possimus, odio
+        blanditiis consectetur veniam fugiat sapiente aut magnam. Eligendi
+        corporis ipsam ipsa!
       </p>
     </>
   )

@@ -3,13 +3,13 @@ const tsParser = require('@typescript-eslint/parser')
 const tsPlugin = require('@typescript-eslint/eslint-plugin')
 const reactPlugin = require('eslint-plugin-react')
 const prettierPlugin = require('eslint-plugin-prettier')
+const tailwindPlugin = require('eslint-plugin-tailwindcss')
 
-// Основная конфигурация ESLint
 module.exports = [
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
     languageOptions: {
-      parser: tsParser, // Указываем парсер
+      parser: tsParser,
       parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
@@ -25,11 +25,13 @@ module.exports = [
     plugins: {
       react: reactPlugin,
       prettier: prettierPlugin,
+      tailwindcss: tailwindPlugin,
     },
     rules: {
       'prettier/prettier': 'error',
       'react/react-in-jsx-scope': 'off',
-      semi: false,
+      'tailwindcss/no-custom-classname': 'off', // Отключаем проверку пользовательских классов
+      'tailwindcss/no-contradicting-classname': 'error', // Проверяем на противоречащие классы
     },
   },
 ]
